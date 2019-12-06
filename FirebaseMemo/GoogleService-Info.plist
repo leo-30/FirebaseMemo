@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>302358612092-hha2bjmpc7t0mhuehfbfd7r9e7fq8155.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.302358612092-hha2bjmpc7t0mhuehfbfd7r9e7fq8155</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCKWPo02ych4JFJ-zdFKCJZSYFpZPNptSU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>302358612092</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rabbit.FirebaseMemo</string>
+	<key>PROJECT_ID</key>
+	<string>fir-memo-d59ee</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-memo-d59ee.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:302358612092:ios:26582921a2bd7d4361e1f9</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-memo-d59ee.firebaseio.com</string>
+</dict>
+</plist>

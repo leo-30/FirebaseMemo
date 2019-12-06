@@ -1,26 +1,18 @@
 //
-//  ViewController.swift
+//  PasswordResetViewController.swift
 //  FirebaseMemo
 //
-//  Created by 原田澪 on 2019/12/05.
+//  Created by 原田澪 on 2019/12/06.
 //  Copyright © 2019 MioHarada. All rights reserved.
 //
 
 import UIKit
-// [START usermanagement_view_import]
 import Firebase
-// [END usermanagement_view_import]
+import FirebaseAuth
 
-class ViewController: UIViewController {
+class PasswordResetViewController: UIViewController {
     
-    @IBOutlet private weak var nameTextField: UITextField!
     @IBOutlet private weak var emailTextField: UITextField!
-    @IBOutlet private weak var passwordTextField: UITextField!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
     
     private func showErrorIfNeeded(_ errorOrNil: Error?) {
         // エラーがなければ何もしません
@@ -52,42 +44,33 @@ class ViewController: UIViewController {
         return message
     }
     
-    @IBAction private func didTapSignUpButton() {
+    @IBAction private func didTapSendButton() {
         let email = emailTextField.text ?? ""
-        let password = passwordTextField.text ?? ""
-        let name = nameTextField.text ?? ""
-        
-        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+         
+        Auth.auth().sendPasswordReset(withEmail: email) { [weak self] error in
             guard let self = self else { return }
-            if let user = result?.user {
-                let req = user.createProfileChangeRequest()
-                req.displayName = name
-                req.commitChanges() { [weak self] error in
-                    guard let self = self else { return }
-                    if error == nil {
-                        user.sendEmailVerification() { [weak self] error in
-                            guard let self = self else { return }
-                            if error == nil {
-                                // 仮登録完了画面へ遷移する処理
-                            }
-                            self.showErrorIfNeeded(error)
-                        }
-                    }
-                    self.showErrorIfNeeded(error)
-                }
+            if error != nil {
+                // 送信完了画面へ
             }
             self.showErrorIfNeeded(error)
         }
     }
-    
-    
-    @IBAction func resetButton() {
-        self.performSegue(withIdentifier: "toReset", sender: self)
-    }
-}
 
-extension UIColor {
-    class func rgba(red: Int, green: Int, blue: Int, alpha: CGFloat) -> UIColor{
-        return UIColor(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: alpha)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
