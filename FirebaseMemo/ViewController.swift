@@ -69,6 +69,8 @@ class ViewController: UIViewController {
                             guard let self = self else { return }
                             if error == nil {
                                 // 仮登録完了画面へ遷移する処理
+                                self.performSegue(withIdentifier: "toMain", sender: self)
+                                
                             }
                             self.showErrorIfNeeded(error)
                         }

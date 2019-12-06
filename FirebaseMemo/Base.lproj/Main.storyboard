@@ -70,6 +70,7 @@
                                 <state key="normal" title="作成"/>
                                 <connections>
                                     <action selector="didTapSignUpButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfa-JM-K1F"/>
+                                    <segue destination="3Rs-Hb-T6v" kind="presentation" identifier="toMain" id="aqq-3Z-C8n"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -126,7 +127,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UiL-ll-cK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857.97101449275374" y="103.79464285714285"/>
+            <point key="canvasLocation" x="99" y="917"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="qDq-dR-2Zk">
+            <objects>
+                <viewController id="3Rs-Hb-T6v" customClass="LoginViewController" customModule="FirebaseMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XWD-Vy-Hga">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ログイン完了" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UY-FU-OH3">
+                                <rect key="frame" x="132" y="51" width="151" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFk-64-Ukf">
+                                <rect key="frame" x="132" y="225" width="151" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwi-k0-l8h">
+                                <rect key="frame" x="76" y="317" width="262" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="14t-2B-F9k"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jDl-Wo-h6x"/>
+                    <connections>
+                        <outlet property="mailLabel" destination="Cwi-k0-l8h" id="HDe-dE-wrg"/>
+                        <outlet property="nameLabel" destination="cFk-64-Ukf" id="phn-kB-EK6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5w-jx-Zfb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102.8985507246377" y="103.79464285714285"/>
         </scene>
     </scenes>
 </document>
