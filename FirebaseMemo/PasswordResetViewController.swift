@@ -55,6 +55,10 @@ class PasswordResetViewController: UIViewController {
             self.showErrorIfNeeded(error)
         }
     }
+    
+    @IBAction func back() {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

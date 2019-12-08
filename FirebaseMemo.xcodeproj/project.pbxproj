@@ -15,6 +15,7 @@
 		3E06F6022398FA14003AA71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E06F6012398FA14003AA71B /* Assets.xcassets */; };
 		3E06F6052398FA14003AA71B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E06F6032398FA14003AA71B /* LaunchScreen.storyboard */; };
 		3E06F60D2398FF83003AA71B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E06F60C2398FF82003AA71B /* GoogleService-Info.plist */; };
+		3E67D164239CA9860091B645 /* LoginMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E67D163239CA9860091B645 /* LoginMenuViewController.swift */; };
 		3EDD9E4A239A49F800AB925E /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD9E49239A49F800AB925E /* PasswordResetViewController.swift */; };
 		3EDD9E4C239A63A100AB925E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD9E4B239A63A100AB925E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		3E06F6042398FA14003AA71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E06F6062398FA14003AA71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E06F60C2398FF82003AA71B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E67D163239CA9860091B645 /* LoginMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMenuViewController.swift; sourceTree = "<group>"; };
 		3EDD9E49239A49F800AB925E /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
 		3EDD9E4B239A63A100AB925E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F5658725E01222186B2732C /* Pods-FirebaseMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseMemo.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseMemo/Pods-FirebaseMemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				3E06F5FC2398FA12003AA71B /* ViewController.swift */,
 				3EDD9E49239A49F800AB925E /* PasswordResetViewController.swift */,
 				3EDD9E4B239A63A100AB925E /* LoginViewController.swift */,
+				3E67D163239CA9860091B645 /* LoginMenuViewController.swift */,
 				3E06F5FE2398FA12003AA71B /* Main.storyboard */,
 				3E06F6012398FA14003AA71B /* Assets.xcassets */,
 				3E06F6032398FA14003AA71B /* LaunchScreen.storyboard */,
@@ -230,6 +233,7 @@
 				3E06F5FD2398FA12003AA71B /* ViewController.swift in Sources */,
 				3E06F5F92398FA12003AA71B /* AppDelegate.swift in Sources */,
 				3E06F5FB2398FA12003AA71B /* SceneDelegate.swift in Sources */,
+				3E67D164239CA9860091B645 /* LoginMenuViewController.swift in Sources */,
 				3EDD9E4C239A63A100AB925E /* LoginViewController.swift in Sources */,
 				3EDD9E4A239A49F800AB925E /* PasswordResetViewController.swift in Sources */,
 			);
